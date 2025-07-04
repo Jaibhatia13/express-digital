@@ -1,9 +1,10 @@
 /*  This below is the boilier plate code written always till 11th line*/
-
+//require("dotenv").config();
+import "dotenv/config";
 import express from "express";
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 /*Used for send data(8 to 16)*/
 // app.get("/", (req, res) => {
 //   res.send("Hello from Jai");
